@@ -74,18 +74,18 @@
 %-------------------------------------------------------------------------------
 % The company being applied to
 \recipient
-  {Company Recruitment Team}
+  {Job Application for Software Engineer/Researcher}
   {Galois Inc.\\421 SW 6th Avenue, Suite 300 \\Portland, Oregon 97204}
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Job Application for Software Engineer/Researcher}
+%% \lettertitle{Job Application for Software Engineer/Researcher}
 % How the letter is opened
 \letteropening{}
 % How the letter is closed
 \letterclosing{Sincerely,}
 % Any enclosures with the letter
-\letterenclosure[Attached]{Résumé}
+%% \letterenclosure[Attached]{Résumé}
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -110,27 +110,19 @@
 
 \lettersection{Software Engineering Background}
 
-I got into Ruby programming early around the time Ruby on Rails started getting popular.
-I was impressed by how small and elegant Ruby programs were compared
-to their C and Java counterparts. Although a dynamic language like
-Ruby makes more runtime errors possible, I consider myself fortunate to have
-spent my nascent programming years with the language. This is because
-the Ruby community emphasizes good software engineering practices,
-like code quality, unit and and integration testing, Test-Driven
-Development, and Agile development. In other words, perhaps because
-Ruby is such a brittle language in the first place, the community
-highly values software correctness.
+My major professional software development experience has involved the
+Ruby programming language.
+The Ruby community emphasizes good software engineering practices,
+like code quality, unit testing, integration testing, Test-Driven
+Development, and Agile development.
 
-After graduating with my
-Bachelor's, I had already worked for two Ruby companies in Florida and
-moved to California to work for Engine Yard. Engine Yard was (and
-perhaps still is) one of the most prestigious Ruby companies.
-There I worked on the main product, a cloud hosting platform for built
+The most most prestigious Ruby company I worked for was Engine Yard,
+where I worked on a cloud hosting platform built
 on top of Amazon AWS. A monolithic application could not support such
 a large product, so instead it was made of many isolated microservices
 to tame the complexity. The main product involved the consumption of
 these microservices, and careful orchestration was required to keep the
-entire apparatus running smoothly. This is around the point where I
+entire apparatus running smoothly. There I
 realized the software engineering limits of a language like
 Ruby for large software endeavours. While testing a single application
 or microservice is easy, the combinatorial explosion of test cases
@@ -146,25 +138,25 @@ an infinite domain, a proof of a universally quantified proposition
 can. This idea led me to write a proof of concept web framework
 (Lemmachine) in the dependently typed Agda language. The idea was that
 proofs of correctness for individual microservices could be reused by
-correctness proofs of the consumer application (in a setting like I
-experienced at Engine Yard) because proofs are inherently
+correctness proofs of the consumer application because proofs are inherently
 compositional.
 
-To learn more with the hope making such work more practical, I decided
-to a do a Ph.D. in Computer Science. I specialized in researching
+I decided to a do a Ph.D. in Computer Science, hoping to
+make such work more practical. I specialized in researching
 dependently typed languages. While writing Lemmachine I encountered
 code reuse issues with modern dependently typed languages, so my
 research focused on generic programming to overcome such issues. Close
 to graduating, I am now very comfortable with dependently typed
-languages, both programming with them and implementing custom versions
-of them to cater to specific problems.
+languages, both programming (and proving) with them and
+implementing (using Haskell) custom versions of them to cater to
+specific problems.
 
 \lettersection{Why Galois?}
 
 At the current point of my career I have experienced two extremes. The
 first extreme was software engineering in Ruby for ordinary business
 applications. The second extreme was academic formal methods
-research. I'm now ready to find the middle ground between the two,
+research using Haskell, Agda, and dependent types. I'm now ready to find the middle ground between the two,
 finding the right compromises between engineering effort and desired
 correctness criteria for specific projects. I believe Galois is a fantastic
 fit for doing this.
