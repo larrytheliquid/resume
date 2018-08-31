@@ -1,0 +1,160 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+% \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\name{Larry}{Diehl}
+\position{{Formal Methods Researcher \& Engineer}}
+\address{2614 SW Water Ave -- Portland, OR -- 97201}
+
+\mobile{407-718-7665} 
+\email{larrytheliquid@gmail.com}
+\homepage{www.larrytheliquid.com}
+\github{larrytheliquid}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%% \quote{``Must be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Future Research and Teaching Interests}
+  {Trustworthy Software Technologies - Tallinn University of Technology}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+%% \lettertitle{Job Application for Software Engineer/Researcher}
+% How the letter is opened
+\letteropening{}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%% \letterenclosure[Attached]{Résumé}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Larry Diehl~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Future Research Interests}
+
+My future research interests involve continuing my efforts to make
+dependently typed languages more realistic for real-world use, via
+extensions to type theories, new programming techniques within
+existing theories, and practical design of languages based on
+underlying theories. Thus far I have done research on predicative
+Church-style theories (e.g. Agda and Coq), as well as less popular
+Curry-style impredicative theories (e.g. Cedille). This has given me a
+better understanding of the advantages and trade-offs between such
+theories. In the future, I am interested in exploring similar
+trade-offs between extensional (e.g. Nuprl) and higher-dimensional
+(e.g. HoTT) theories, and looking for ``sweet spots'' in language
+design that maximize usefulness while minimizing complexity.
+
+Having worked on datatype-generic programming using initial-algebra
+encodings of datatypes has given me some experience with algebraic
+programming. However, I am interested in more deeply learning category
+theory, so that I can be better at structuring programs and theories,
+and identifying existing structures to avoid reinventing one-off
+instances of categorical concepts. Doing research in Tallinn would be
+an exciting opportunity to get guidance from experts in these areas
+like Tarmo Uustalu. Finally, I am also interested in looking into
+applying my previous research to problem domains from industry (like
+those that I worked on before my Ph.D.) to see how much the practical
+gap has closed and what areas still need to be improved.
+
+\lettersection{Teaching Interests}
+
+Areas of Computer Science such as algorithms, networks, machine
+learning, and databases have clear applications to industry, thus
+students tend to have a natural motivation to learn such topics.
+In contrast, the areas of programming languages and functional
+programming have had much less adoption in industry. With my
+background in working for Silicon Valley software companies, I feel
+that I have a rare perspective of knowing the joy and pain involved in
+programming with conventional (industrial) languages and functional
+(academic) languages. I am excited by the idea of not only teaching
+students in the areas of PL and FP, but also inspiring them with
+concrete examples of how techniques from these areas elegantly address
+issues from industry in ways that are mostly unknown.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
